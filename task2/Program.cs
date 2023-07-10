@@ -8,13 +8,18 @@ Console.WriteLine("введите числа");
 int numberA = int.Parse(Console.ReadLine());
 int numberB = int.Parse(Console.ReadLine());
 int max = numberA;
-if (numberA > numberB)
+int min = numberB;
+if (numberB > max)
 {
-    max = numberA;
+    max = numberB;
+    min = numberA;
 }
 else
 {
-    max = numberB;
+    min = numberB;
+    max = numberA;
 }
-Console.Write("max= ");
+Console.Write("большее число ");
 Console.WriteLine(max);
+Console.Write("меньшее число ");
+Console.WriteLine(min);
